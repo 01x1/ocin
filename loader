@@ -1,0 +1,7 @@
+local Games = {2788229376}
+
+if table.find(Games,game.PlaceId) then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/01x1/ocin/main/"..tostring(game.PlaceId)))
+else
+    warn("Game not supported.")
+end
