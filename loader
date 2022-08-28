@@ -2,10 +2,14 @@ if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
-local Games = {2788229376,205224386,7213786345}
+local Games = {
+    [2788229376]="DaHood",
+    [7213786345]="DaHood",
+    [205224386]="HideNSeek",
+}
 
-if table.find(Games,game.PlaceId) then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/01x1/ocin/main/"..tostring(game.PlaceId)))()
+if Games[game.PlaceId] then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/01x1/ocin/main/"..tostring(Games[game.PlaceId])))()
 else
     warn("Game not supported.")
 end
