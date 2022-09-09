@@ -8,6 +8,7 @@ local Games = {
     [205224386]="HideNSeek",
     [9183932460]="UntitledHood",
     [189707]="NaturalDisaster",
+    [606849621]="Jailbreak",
 }
 
 if Games[game.PlaceId] then
